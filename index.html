@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Undangan Seminar Proposal Skripsi</title>
+  
+  <!-- Meta SEO & Social Sharing -->
+  <meta name="description" content="Undangan Resmi Seminar Proposal Skripsi. Kehadiran dan doa restu Anda merupakan kehormatan bagi kami.">
+  <meta name="theme-color" content="#070c18">
+  <meta property="og:title" content="Undangan Seminar Proposal Skripsi">
+  <meta property="og:description" content="Undangan Resmi Seminar Proposal Skripsi. Klik untuk melihat jadwal dan detail acara.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Decorations -->
+  <div class="bg-decorations">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+    <div class="pattern-overlay"></div>
+  </div>
+
+  <!-- Background Music Audio Element -->
+  <audio id="bgAudio" loop preload="auto">
+    <source src="" type="audio/mp3">
+  </audio>
+
+  <!-- ====================================================================
+       1. COVER SCREEN / AMPLOP DIGITAL PEMBUKA
+       ==================================================================== -->
+  <div id="coverScreen" class="cover-screen">
+    <div class="cover-card">
+      <div class="cover-badge">
+        <i class="fa-solid fa-graduation-cap"></i> Undangan Resmi
+      </div>
+      
+      <div class="cover-icon-wrapper">
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </div>
+
+      <div class="cover-title-sub">Seminar Proposal Skripsi</div>
+      <h1 class="cover-title-main" id="coverStudentName">Fajar Ramadhan</h1>
+
+      <div class="guest-box">
+        <div class="guest-label">Kepada Yth. Bapak/Ibu/Rekan:</div>
+        <div class="guest-name" id="guestNameDisplay">Tamu Undangan</div>
+        <div class="guest-desc">Merupakan suatu kehormatan atas kehadiran & doa restu Anda</div>
+      </div>
+
+      <button id="btnOpenInvitation" class="btn-open">
+        <i class="fa-regular fa-envelope"></i> Buka Undangan
+      </button>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       2. KONTEN UTAMA UNDANGAN
+       ==================================================================== -->
+  <main class="main-wrapper" id="mainWrapper">
+    <div class="container">
+
+      <!-- HERO / PROFIL MAHASISWA -->
+      <section class="section-card hero-card">
+        <div class="profile-avatar-container">
+          <div class="avatar-glow"></div>
+          <div class="avatar-border-ring">
+            <img id="studentPhoto" src="assets/profile.jpg" alt="Foto Profil Mahasiswa" class="profile-img">
+          </div>
+          <div class="avatar-badge" title="Presenter">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+        </div>
+
+        <div class="hero-subtitle">SEMINAR PROPOSAL SKRIPSI</div>
+        <h2 class="student-name">
+          <span id="studentName">Fajar Ramadhan</span>
+          <span class="target-degree" id="targetDegree">S.Kom.</span>
+        </h2>
+        <div class="student-nim">NIM: <span id="studentNim">2201011045</span></div>
+
+        <div class="institution-pill">
+          <i class="fa-solid fa-building-columns"></i>
+          <span id="studentInstitution">Fakultas Ilmu Komputer &bull; Universitas Negeri</span>
+        </div>
+      </section>
+
+      <!-- JUDUL PROPOSAL SKRIPSI -->
+      <section class="section-card thesis-card">
+        <div class="quote-decor">“</div>
+        <div class="thesis-label">
+          <i class="fa-solid fa-book-bookmark"></i> Judul Proposal Skripsi
+        </div>
+        <h3 class="thesis-title-text" id="thesisTitle">
+          Rancang Bangun Sistem Informasi Monitoring Dan Evaluasi Kinerja Akademik Mahasiswa Berbasis Web
+        </h3>
+        <div class="thesis-badge-group">
+          <span class="thesis-badge" id="thesisField">
+            <i class="fa-solid fa-code-branch"></i> Rekayasa Perangkat Lunak
+          </span>
+        </div>
+      </section>
+
+      <!-- WAKTU, LOKASI & COUNTDOWN TIMER -->
+      <section class="section-card">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-regular fa-clock"></i> Pelaksanaan</span>
+          <h3 class="section-title">Waktu & Tempat</h3>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <div class="countdown-num" id="cdDays">00</div>
+            <div class="countdown-unit">Hari</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cdHours">00</div>
+            <div class="countdown-unit">Jam</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cdMinutes">00</div>
+            <div class="countdown-unit">Menit</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cdSeconds">00</div>
+            <div class="countdown-unit">Detik</div>
+          </div>
+        </div>
+
+        <!-- Detail Jadwal -->
+        <div class="event-details">
+          <div class="event-detail-item">
+            <div class="item-icon-box">
+              <i class="fa-regular fa-calendar-check"></i>
+            </div>
+            <div class="item-content">
+              <div class="item-label">Hari & Tanggal</div>
+              <div class="item-val" id="eventDateText">Selasa, 20 Oktober 2026</div>
+              <div class="item-sub" id="eventTimeText"><i class="fa-regular fa-clock"></i> 09.00 - 11.30 WIB</div>
+            </div>
+          </div>
+
+          <div class="event-detail-item">
+            <div class="item-icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="item-content">
+              <div class="item-label">Lokasi Ruangan</div>
+              <div class="item-val" id="eventLocationName">Ruang Seminar Gedung Dekanat Lantai 3</div>
+              <div class="item-sub" id="eventAddressText">Kampus Utama, Jl. Pendidikan No. 1</div>
+            </div>
+          </div>
+
+          <!-- Hybrid Online Box (Jika ada) -->
+          <div class="event-detail-item" id="onlineSection">
+            <div class="item-icon-box" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.1);">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <div class="item-content">
+              <div class="item-label">Akses Virtual Meeting</div>
+              <div class="item-val" id="onlinePlatformText">Google Meet</div>
+              <div class="item-sub">Dapat dihadiri secara online via tautan meeting</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons: Calendar, Maps, Meeting -->
+        <div class="event-actions">
+          <button id="btnAddToCalendar" class="btn-action-primary">
+            <i class="fa-brands fa-google"></i> Tambahkan ke Google Calendar
+          </button>
+
+          <div class="action-row">
+            <a id="btnMapsLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-action-outline">
+              <i class="fa-solid fa-map-location-dot"></i> Petunjuk Arah
+            </a>
+            <a id="btnOnlineLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-action-outline">
+              <i class="fa-solid fa-headset"></i> Gabung Online
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEWAN PEMBIMBING & PENGUJI -->
+      <section class="section-card">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-users"></i> Dewan Penguji & Pembimbing</span>
+          <h3 class="section-title">Dosen Pembimbing & Penguji</h3>
+        </div>
+
+        <div class="dosen-list" id="dosenListContainer">
+          <!-- Will be rendered dynamically from config.js -->
+        </div>
+      </section>
+
+      <!-- SUSUNAN ACARA / AGENDA -->
+      <section class="section-card">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-list-check"></i> Rundown Acara</span>
+          <h3 class="section-title">Susunan Acara</h3>
+        </div>
+
+        <div class="timeline" id="agendaTimeline">
+          <!-- Will be rendered dynamically from config.js -->
+        </div>
+      </section>
+
+      <!-- BUKU TAMU & UCAPAN DOA / RSVP -->
+      <section class="section-card">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-regular fa-comments"></i> Buku Tamu & Doa Restu</span>
+          <h3 class="section-title">Ucapan & Kehadiran</h3>
+        </div>
+
+        <!-- Form Kirim Ucapan & Konfirmasi Kehadiran -->
+        <form id="rsvpForm" class="rsvp-form">
+          <div class="form-group">
+            <label class="form-label" for="inputName">Nama Lengkap</label>
+            <input type="text" id="inputName" class="form-input" placeholder="Masukkan nama Anda..." required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inputAttendance">Konfirmasi Kehadiran</label>
+            <select id="inputAttendance" class="form-select" required>
+              <option value="Hadir Langsung"> Insya Allah Hadir Langsung</option>
+              <option value="Hadir Online"> Hadir Secara Online</option>
+              <option value="Doa Dari Jauh"> Berhalangan Hadir (Turut Mendoakan)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inputMessage">Pesan Ucapan / Doa</label>
+            <textarea id="inputMessage" class="form-textarea" rows="3" placeholder="Tuliskan ucapan selamat atau doa untuk seminar ini..." required></textarea>
+          </div>
+
+          <div class="form-btn-group">
+            <button type="submit" class="btn-submit-wish">
+              <i class="fa-regular fa-paper-plane"></i> Kirim Ucapan
+            </button>
+            <a id="btnWhatsAppRsvp" href="#" target="_blank" class="btn-whatsapp-rsvp">
+              <i class="fa-brands fa-whatsapp"></i> Konfirmasi Langsung ke WhatsApp
+            </a>
+          </div>
+        </form>
+
+        <!-- Daftar Ucapan yang sudah masuk -->
+        <div class="wishes-list" id="wishesList">
+          <!-- Wishes will be rendered dynamically here -->
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="page-footer">
+        <p class="footer-quote">
+          “Barang siapa menempuh jalan untuk mencari ilmu, maka Allah akan memudahkan baginya jalan menuju surga.”
+        </p>
+        <p>Atas kehadiran dan doa restu Bapak/Ibu/Rekan sekalian, kami haturkan terima kasih yang setulus-tulusnya.</p>
+        <p style="margin-top: 16px; opacity: 0.5; font-size: 0.75rem;">
+          &copy; <span id="currentYear">2026</span> Seminar Proposal Undangan Digital &bull; Siap Hosting Vercel
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- ====================================================================
+       3. FLOATING ACTION CONTROLS (MUSIK & SHARE)
+       ==================================================================== -->
+  <div class="floating-actions">
+    <button id="btnToggleMusic" class="btn-floating music-btn" title="Nyalakan/Matikan Musik">
+      <i class="fa-solid fa-compact-disc"></i>
+    </button>
+    <button id="btnShareLink" class="btn-floating" title="Salin Tautan Undangan">
+      <i class="fa-solid fa-share-nodes"></i>
+    </button>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div id="toastNotification" class="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Tautan berhasil disalin!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
