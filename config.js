@@ -9,19 +9,19 @@
 const CONFIG = {
   // Informasi Mahasiswa / Peneliti
   mahasiswa: {
-    nama: "Fajar Ramadhan", // Ganti dengan nama lengkap Anda
-    gelarTarget: "S.Kom.", // Gelar yang dituju (misal: S.Kom, S.T, S.Si, S.E, dll)
-    nim: "2201011045", // Ganti dengan NIM Anda
-    programStudi: "Teknik Informatika", // Ganti dengan Program Studi Anda
-    fakultas: "Fakultas Ilmu Komputer", // Ganti dengan Fakultas Anda
-    universitas: "Universitas Negeri", // Ganti dengan Universitas Anda
+    nama: "Zatnika Maulana", // Ganti dengan nama lengkap Anda
+    gelarTarget: "S.T.", // Gelar yang dituju (misal: S.Kom, S.T, S.Si, S.E, dll)
+    nim: "22315015", // Ganti dengan NIM Anda
+    programStudi: "Sistem dan Teknologi Informasi", // Ganti dengan Program Studi Anda
+    fakultas: "Fakultas Teknik", // Ganti dengan Fakultas Anda
+    universitas: "Universitas Muhammadiyah Kendari", // Ganti dengan Universitas Anda
     foto: "assets/profile.jpg", // Path foto profil (sudah diset foto Anda)
   },
 
   // Informasi Judul Proposal Skripsi
   skripsi: {
-    judul: "Rancang Bangun Sistem Informasi Monitoring Dan Evaluasi Kinerja Akademik Mahasiswa Berbasis Web",
-    bidangKajian: "Rekayasa Perangkat Lunak & Sistem Informasi",
+    judul: "IMPLEMENTASI METODE FUZZY PADA SISTEM SMART WATER TANK BERBASIS IOT UNTUK OPTIMASI PENGENDALIAN ADAPTIF POMPA PENGISIAN AIR",
+    bidangKajian: "Internet Of Things",
   },
 
   // Waktu & Pelaksanaan Seminar (SANGAT PENTING: Format ISO YYYY-MM-DDTHH:mm:ss untuk Countdown & Kalender)
@@ -32,10 +32,10 @@ const CONFIG = {
     waktuSelesaiISO: "2026-10-20T11:30:00",
 
     // Tampilan teks yang dibaca pengunjung di halaman
-    hariTanggal: "Selasa, 20 Oktober 2026",
+    hariTanggal: "Jumat,11 Oktober 2026",
     jamPelaksanaan: "09.00 - 11.30 WIB",
-    tempat: "Ruang Seminar Gedung Dekanat Lantai 3",
-    alamatLengkap: "Kampus Utama, Jl. Pendidikan No. 1",
+    tempat: "Ruang Seminar",
+    alamatLengkap: "Kampus lama Umkendari",
     
     // Tautan Google Maps lokasi (opsional, jika kosong tombol maps tidak muncul)
     googleMapsUrl: "https://maps.google.com/?q=Ruang+Seminar+Kampus",
@@ -50,12 +50,12 @@ const CONFIG = {
   pembimbing: [
     {
       peran: "Dosen Pembimbing I",
-      nama: "Dr. Eng. Muhammad Yusuf, M.T.",
+      nama: "Ir. Ery Muchyar Hasiri, S.Kom.,M.T",
       nip: "19820512 200812 1 002"
     },
     {
       peran: "Dosen Pembimbing II",
-      nama: "Anisa Rahmawati, S.Kom., M.Cs.",
+      nama: "AMuh. Avied Bachmid, S.Kom.,M.Kom",
       nip: "19890423 201504 2 001"
     }
   ],
@@ -85,7 +85,7 @@ const CONFIG = {
   // Kontak & RSVP WhatsApp Mahasiswa
   kontak: {
     nomorWhatsApp: "6281234567890", // Ganti dengan nomor WhatsApp Anda (awali dengan 62 tanpa + atau 0)
-    namaKontak: "Fajar",
+    namaKontak: "Zatnika Maulana",
   },
 
   // Background Music (Audio instrumen akustik / piano santai)
