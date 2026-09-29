@@ -15,7 +15,7 @@ const CONFIG = {
     programStudi: "Sistem dan Teknologi Informasi", // Ganti dengan Program Studi Anda
     fakultas: "Fakultas Teknik", // Ganti dengan Fakultas Anda
     universitas: "Universitas Muhammadiyah Kendari", // Ganti dengan Universitas Anda
-    foto: "assets/profile.jpg", // Path foto profil (sudah diset foto Anda)
+    foto: "profile.jpg", // Path foto profil (sudah diset foto Anda)
   },
 
   // Informasi Judul Proposal Skripsi
