@@ -103,7 +103,7 @@ function initGuestName() {
     const formattedGuest = decodeURIComponent(guestQuery).replace(/\+/g, ' ');
     guestDisplay.textContent = formattedGuest;
   } else {
-    guestDisplay.textContent = "Sahabat & Rekan-rekan Tercinta";
+    guestDisplay.textContent = "Sahabat & Rekan-rekan yang saya Hormati";
   }
 }
 
