@@ -377,26 +377,8 @@ function showToast(message) {
 /**
  * Buku Tamu (Wishes) & RSVP
  */
-const DEFAULT_WISHES = [
-  {
-    nama: "Budi Santoso",
-    kehadiran: "Hadir Langsung",
-    pesan: "Bismillah lancar dan sukses seminar proposalnya! Semoga dimudahkan revisinya nanti.",
-    waktu: "1 jam yang lalu"
-  },
-  {
-    nama: "Aulia Rahma",
-    kehadiran: "Hadir Online",
-    pesan: "Semangat kawan seperjuangan! Insya Allah ikut gabung via Google Meet yaa.",
-    waktu: "3 jam yang lalu"
-  },
-  {
-    nama: "Dian Pratama",
-    kehadiran: "Doa Dari Jauh",
-    pesan: "Mohon maaf belum bisa hadir langsung, sukses selalu dan lancar sampai wisuda!",
-    waktu: "Kemarin"
-  }
-];
+const DEFAULT_WISHES = [];
+
 
 function initGuestbook() {
   const rsvpForm = document.getElementById('rsvpForm');
