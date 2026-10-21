@@ -21,36 +21,36 @@ const CONFIG = {
   // Informasi Judul Proposal Skripsi
   skripsi: {
     judul: "Implementasi Metode Fuzzy pada Sistem Smart Water Tank Berbasis IoT untuk Optimasi Pengendalian Adaptif Pompa Pengisian Air",
-    bidangKajian: "Internet of Things & Sistem Cerdas",
+    bidangKajian: "Internet of Things & Sistem Cerdas • Information System Engineer",
   },
 
   // Waktu & Pelaksanaan Seminar (Format ISO YYYY-MM-DDTHH:mm:ss untuk Countdown & Kalender)
   jadwal: {
-    // Tanggal untuk countdown & Google Calendar
-    waktuMulaiISO: "2026-10-23T09:00:00",
-    waktuSelesaiISO: "2026-10-23T11:30:00",
+    // Tanggal untuk countdown
+    waktuMulaiISO: "2026-10-23T09:30:00",
+    waktuSelesaiISO: "2026-10-23T12:00:00",
 
     // Tampilan teks yang dibaca pengunjung di halaman
     hariTanggal: "Jumat, 23 Oktober 2026",
-    jamPelaksanaan: "09.00 - 11.30 WITA",
-    tempat: "Ruang Seminar Fakultas Teknik",
+    jamPelaksanaan: "09.30 WITA - Selesai",
+    tempat: "Ruang Seminar STI GIC 403",
     alamatLengkap: "Universitas Muhammadiyah Kendari, Jl. KH. Ahmad Dahlan No. 10, Kendari",
     
     // Tautan Google Maps lokasi
     googleMapsUrl: "https://maps.google.com/?q=Universitas+Muhammadiyah+Kendari",
 
-    // Pelaksanaan Online (Zoom / Google Meet)
-    hybridOnline: true,
-    platformOnline: "Google Meet",
-    linkOnline: "https://meet.google.com/und-sempro-2026",
+    // Pelaksanaan Tatap Muka Langsung (Google Meet dinonaktifkan)
+    hybridOnline: false,
+    platformOnline: "",
+    linkOnline: "",
   },
 
-  // Dosen Pembimbing
+  // Dosen Pembimbing (NIDN dihilangkan sesuai permintaan)
   pembimbing: [
     {
       peran: "Dosen Pembimbing I",
       nama: "Ir. Ery Muchyar Hasiri, S.Kom., M.T.",
-      nip: "0913098203"
+      nip: ""
     },
     {
       peran: "Dosen Pembimbing II",
@@ -59,12 +59,12 @@ const CONFIG = {
     }
   ],
 
-  // Dosen Penguji
+  // Dosen Penguji (NIDN dihilangkan sesuai permintaan)
   penguji: [
     {
       peran: "Dosen Penguji I",
       nama: "Ir. Ery Muchyar Hasiri, S.Kom., M.T.",
-      nip: "0913098203"
+      nip: ""
     },
     {
       peran: "Dosen Penguji II",
@@ -74,21 +74,21 @@ const CONFIG = {
     {
       peran: "Dosen Penguji III",
       nama: "Alfiah Fajriani, S.T., M.Eng.",
-      nip: "0907099101"
+      nip: ""
     },
     {
       peran: "Dosen Penguji IV",
       nama: "Sitti Najmia Rifai, S.T., M.T.",
-      nip: "0917129502"
+      nip: ""
     }
   ],
 
   // Agenda Acara
   agenda: [
-    { jam: "09.00 - 09.15", kegiatan: "Pembukaan oleh Moderator & Doa Bersama" },
-    { jam: "09.15 - 09.45", kegiatan: "Presentasi Proposal Skripsi oleh Mahasiswa" },
-    { jam: "09.45 - 11.15", kegiatan: "Sesi Tanya Jawab, Kritik & Saran Dewan Penguji & Pembimbing" },
-    { jam: "11.15 - 11.30", kegiatan: "Rapat Penilaian, Pengumuman Hasil & Penutup" }
+    { jam: "09.30 - 09.45", kegiatan: "Pembukaan oleh Moderator & Doa Bersama" },
+    { jam: "09.45 - 10.15", kegiatan: "Presentasi Proposal Skripsi oleh Mahasiswa" },
+    { jam: "10.15 - 11.45", kegiatan: "Sesi Tanya Jawab, Kritik & Saran Dewan Penguji & Pembimbing" },
+    { jam: "11.45 - Selesai", kegiatan: "Rapat Penilaian, Pengumuman Hasil & Penutup" }
   ],
 
   // Kontak & RSVP WhatsApp Mahasiswa
